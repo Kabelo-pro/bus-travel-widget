@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus travel widget</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./simple-grid.css">
+</head>
+
+<body class="container">
+    <h1>Bus Travel App</h1>
+
+
+    <div class="row">
+        <div class="col-6">
+            <label for="points">Points</label>
+        </div>
+        <div class="col-6">
+            <input type="text" id="points">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <label for="startLocation">Start Location</label>
+        </div>
+
+        <div class="col-6">
+            <select id="startLocation">
+                <option value="Khayelitsha">Khayelitsha</option>
+                <option value="Dunoon">Dunoon</option>
+                <option value="Mitchells Plain">Mitchells Plain</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <h2>Travel Times</h2>
+        <div class="row">
+            <div class="col-6">
+                <input type="radio" class="" id="" name="" value="">
+                <label for="">Peak</label>
+            </div>
+
+            <div class="col-6">
+                <input type="radio" class="" id="" name="" value="">
+                <label for="">Off-peak</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="checkbox" id="myCheckbox">
+                <label for="myCheckbox">Return trip</label>
+            </div>
+            <div class="col-6">
+                <button type="button">Calculate</button>
+            </div>
+        </div>
+
+        <div>
+            <h2>Calculations</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <p>Number of single trips:</p>
+                </div>
+                <div class="col-6">
+                    <div id="singleTrips">0</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Price per trip (single):</p>
+                </div>
+                <div class="col-6">
+                    <div id="pricePerTripSingle">R0.00</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Number of return trips:</p>
+                </div>
+                <div class="col-6">
+                    <div id="returnTrips">0</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Price per trip:</p>
+                </div>
+                <div class="col-6">
+                    <div id="pricePerTrip">R0.00</div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <script src="./bus-widget.js"></script>
+            <script src="./bus-widget.dom.js"></script>
+</body>
+
+</html>
